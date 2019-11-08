@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">
+    <title>Title</title>
+    <script>
+        var phoneWidth = parseInt(window.screen.width);
+        var phoneScale = phoneWidth / 640;
+        var ua = navigator.userAgent;
+        if (/Android (\d+\.\d+)/.test(ua)) {
+            var version = parseFloat(RegExp.$1);
+            if (version > 2.3) {
+                document.write('<meta name="viewport" content="width=640, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+            } else {
+                document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+        }
+    </script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+
+
+</head>
+<body style="user-select:none; -webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;">
+<div class="index_bg">
+    <div class="index_start"></div>
+</div>
+
+<!--loading-->
+<div class="loading dis" >
+    <img src="images/loading.gif" alt="">
+</div>
+<!--游戏页面-->
+<div class = "game_bg dis" id = "game">
+    <canvas id = "canvas" width = " 640" height = "960"></canvas>
+    <div class = "game_back"></div>
+    <div class = "game_score">0</div>
+    <div class = "game_time">30</div>
+    <div class = "game_prompt"></div>
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!--<script type="text/javascript" src="js/index.js"></script>-->
+<script type="text/javascript" src="js/touch-0.2.14.min.js"></script>
+<script type="text/javascript" src="js/resources.js"></script>
+<script type="text/javascript" src="js/Game.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

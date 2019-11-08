@@ -1,0 +1,45 @@
+.index_bg{
+    width:640px;height: 100%;position: absolute;top:0px;left: 0px;overflow: hidden;
+    background: url("../images/index_bg.jpg") no-repeat;
+}
+
+.index_start{
+    background: url("../images/index_start.png?1") no-repeat;
+    width: 299px;height: 133px;position: absolute;top:480px;left: 159px;
+}
+.loading{
+    width:640px;height: 100%;position: absolute;top:0px;left: 0px;
+    background: rgba(0,0,0,0.5);
+}
+.loading>img{
+    position: absolute;top:50%;left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+}
+.game_bg{
+    width:640px;height: 100%;position: absolute;top:0px;left: 0px;
+}
+.game_back{
+    background: url("../images/game_back.png?1") no-repeat;
+    width: 27px;height: 44px;position: absolute;top:30px;left:186px;
+}
+.game_score{
+    background: url("../images/game_score.png?1") no-repeat;
+    width: 66px;height: 51px;position: absolute;top:30px;left: 240px;
+    line-height: 51px;padding-left: 68px;color:#fff;font-size: 24px;
+}
+.game_time{
+    background: url("../images/game_time.png?1") no-repeat;
+    width: 70px;height: 60px;position: absolute;top:20px;left: 393px;
+    line-height: 60px;padding-left: 64px;color: #fff;font-size: 24px;
+}
+.game_ready{
+    width:640px;height: 100%;position: absolute;top:0px;left: 0px;
+}
+.game_prompt{
+    background: url("../images/game_prompt.png?1") no-repeat;
+    width: 640px;height: 100%;position: absolute;top:0px;left: 0px;
+}
+.loading{
+    width:640px;height: 100%;position: absolute;top:0px;left: 0px;
+    background: rgba(0,0,0,0.5);
+}

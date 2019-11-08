@@ -1,0 +1,12 @@
+body,ul,p,h1,h2,h3,h4,h5,input,ol,li,table,tr,td{padding: 0;margin: 0;font-family: "微软雅黑";text-shadow:0 0 0;}
+h1,h2,h3,h4,h5{font-weight: normal}
+input,textarea{outline: none;border-left:0px;border-bottom: 1px;border-right: 0px;border-top:0px;}
+ul,li,ol{list-style: none;}
+a{text-decoration: none;}
+a:active{text-decoration: none;color:#fff;}
+.lt{float:left}
+.rt{float:right}
+.clr{clear:both}
+.cur{cursor: pointer}
+.dis{display:none}
+img{border:0px;margin: 0;padding: 0;}
